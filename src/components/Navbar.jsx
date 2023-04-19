@@ -1,6 +1,6 @@
 export default function Navbar({ page, handlePage }) {
     return (
-        <nav className=" bg-indigo-100 p-2 fixed w-full">
+        <nav className=" bg-indigo-100 p-2 fixed w-full z-20">
             <ul className="flex justify-around items-center">
                 <button className={`${page === 'about' ? 'text-indigo-300' : 'text-indigo-600'} hover:text-indigo-900 sm:text-lg text-sm`}
                     onClick={e => handlePage(e, 'about')}>About</button>

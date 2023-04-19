@@ -1,4 +1,7 @@
+import React from "react"
 import { useState, useRef } from "react"
+import Modal from "./Modal"
+import { projects } from "./assets/project"
 
 export default function Projects() {
     return (
@@ -12,41 +15,49 @@ export default function Projects() {
 
 function Carousel() {
     const [slide, setSlide] = useState(0)
+    const [modal, setModal] = useState([false, false, false])
     const wrapper = useRef(null)
 
     function slideLeft() {
         if (slide > 0) setSlide(slide - 1)
-        else setSlide(imgs.length - 1)
+        else setSlide(projects.length - 1)
     }
     function slideRight() {
-        if (slide < imgs.length - 1) setSlide(slide + 1)
+        if (slide < projects.length - 1) setSlide(slide + 1)
         else setSlide(0)
     }
-    const imgs = ["./src/imgs/slimehack.webp", "./src/imgs/eventplanner.webp", "./src/imgs/gifthub.webp"]
-    //, "./src/imgs/eventplanner.webp", "./src/imgs/gifthub.webp"]
+
+    function showModal(i) {
+        const newModals = [...modal]
+        newModals[i] ? newModals[i] = false : newModals[i] = true
+        setModal(newModals)
+    }
 
     return (
         <div className="w-full h-full relative">
             <button className="absolute bottom-1/2 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={slideLeft}></button>
             <div ref={wrapper} className="flex h-full overflow-hidden relative">
-                {imgs.map((image, i) => {
+                {projects.map((project, i) => {
                     const active = i === slide
                     const translateX = active ? "translate-x-0" : i < slide ? "-translate-x-full" : "translate-x-full"
                     return (
                         <div key={i} className={`absolute inset-0 flex items-center justify-center transform ${translateX} transition-transform duration-500 ease-in-out`}>
-                            <Slide image={image} />
+                            <Slide image={project.img} index={i} showModal={showModal} />
                         </div>
                     )
                 })}
             </div>
+            {projects.map((project, i) => {
+                return <Modal key={project.title} image={project.img} title={project.title} body={project.body} github={project.github} deploy={project.deploy} modal={modal} index={i} />
+            })}
             <button className="absolute bottom-1/2 right-0 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={slideRight}></button>
         </div>
     )
 }
 
 
-function Slide({ image }) {
+function Slide({ image, index, showModal }) {
     return (
-        <img src={image} className="w-full h-full object-cover object-center" alt={image} />
+        <img src={image} className="w-full h-full object-cover object-center" alt={image} onClick={(e) => showModal(index)} />
     )
 }
