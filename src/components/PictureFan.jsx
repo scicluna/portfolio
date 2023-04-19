@@ -6,9 +6,9 @@ export default function PictureFan() {
 
     return (
         <div className="w-40 h-28 flex relative">
-            <button className="text-2xl h-28 w-40 absolute z-10 text-indigo-500 hover:text-indigo-800"
+            <button className="text-2xl p-5 absolute z-10 text-indigo-900 bg-white mt-2 rounded-lg shadow-sm shadow-indigo-950 hover:bg-indigo-500 transition-all duration-200 ease-in"
                 onClick={(e) => setHidden(hidden ? false : true)}>My Stack</button>
-            <div className={`${hidden ? 'opacity-0' : 'opacity-100'} transition-all ease-out duration-500`}>
+            <div className={`${hidden ? 'opacity-0' : 'opacity-100'} transition-all ease-out duration-1000`}>
                 <FanImage img={"./src/imgs/JS.svg.png"} position={1} hidden={hidden} />
                 <FanImage img={"./src/imgs/css2.png"} position={2} hidden={hidden} />
                 <FanImage img={"./src/imgs/HTML.svg.png"} position={3} hidden={hidden} />
@@ -35,11 +35,11 @@ function FanImage({ img, position, hidden }) {
             case 4:
                 return '-translate-x-12 translate-y-20 ';
             case 5:
-                return 'translate-x-12 -translate-y-24';
+                return 'translate-x-12 -translate-y-28';
             case 6:
                 return 'translate-x-20 translate-y-24';
             case 7:
-                return 'sm:translate-x-40 translate-x-28 sm:-translate-y-20 -translate-y-12';
+                return 'sm:translate-x-40 translate-x-28 -translate-y-12';
             case 8:
                 return 'sm:translate-x-44 translate-x-28 translate-y-12 ';
             case 9:
@@ -51,5 +51,5 @@ function FanImage({ img, position, hidden }) {
     }
 
     return <img src={img} className={`w-28 opacity-70 sm:opacity-90 h-28 aspect-square absolute top-0 transform
-    transition-all ease-out duration-500 ${hidden ? '' : fanPosition()}`} />
+    transition-all ease-out duration-1000 ${hidden ? '' : fanPosition()}`} />
 }
