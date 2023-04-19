@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import About from "./components/About"
 import Projects from "./components/Projects"
 import Resume from "./components/Resume"
+import Contacts from "./components/Contacts"
 
 function App() {
   const [page, setPage] = useState('about')
@@ -15,7 +16,7 @@ function App() {
       case 'projects':
         return <Projects />
       case 'contact':
-        return <h1>Contacts</h1>
+        return <Contacts />
       case 'resume':
         return <Resume />
       default:
