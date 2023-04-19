@@ -35,3 +35,9 @@ THEN I see a link to a downloadable resume and a list of the developer’s profi
 
 WHEN I view the footer - DONE
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) - DONE
+
+ADD MORE PROJECTS TO CAROUSEL?
+ANIMATION IN BACKGROUND LIKE BEFORE?
+OPTIMIZE? (HOW?)
+SMALL TOUCHES
+FIGURE OUT HOW TO MAKE A WORKING FRONTEND ONLY CONTACT ME FORM

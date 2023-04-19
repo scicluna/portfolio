@@ -3,7 +3,9 @@ import PictureFan from "./PictureFan"
 export default function About() {
     return (
         <section className="h-full flex flex-col md:flex-row items-center sm:justify-around sm:m-5 m-1" >
-            <img src="./src/imgs/me.webp" alt="A picture of myself!" className="sm:w-96 w-full m-5" />
+            <div className=" bg-indigo-200 rounded-full overflow-hidden">
+                <img src="./src/imgs/me.webp" alt="A picture of myself!" className="sm:w-96 w-full m-5" />
+            </div>
             <div>
                 <PictureFan />
             </div>
