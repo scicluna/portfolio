@@ -6,7 +6,7 @@ import { projects } from "./assets/project"
 export default function Projects() {
     return (
         <section className="h-full flex items-center justify-center">
-            <div className="h-full w-full bg-indigo-400 p-20">
+            <div className="h-full w-full p-20">
                 <Carousel />
             </div>
         </section>
@@ -35,7 +35,10 @@ function Carousel() {
 
     return (
         <div className="w-full h-full relative">
-            <button className="absolute bottom-1/2 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={slideLeft}></button>
+            <button className="absolute bottom-1/2 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={e => {
+                slideLeft(e)
+                setModal([false, false, false])
+            }}></button>
             <div ref={wrapper} className="flex h-full overflow-hidden relative">
                 {projects.map((project, i) => {
                     const active = i === slide
@@ -48,9 +51,12 @@ function Carousel() {
                 })}
             </div>
             {projects.map((project, i) => {
-                return <Modal key={project.title} image={project.img} title={project.title} body={project.body} github={project.github} deploy={project.deploy} modal={modal} index={i} />
+                return <Modal key={project.title} image={project.img} title={project.title} body={project.body} github={project.github} deploy={project.deploy} modal={modal} index={i} setModal={setModal} />
             })}
-            <button className="absolute bottom-1/2 right-0 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={slideRight}></button>
+            <button className="absolute bottom-1/2 right-0 translate-y-1/2 w-8 h-full bg-indigo-200 opacity-10 z-10" onClick={e => {
+                slideRight(e)
+                setModal([false, false, false])
+            }}></button>
         </div>
     )
 }

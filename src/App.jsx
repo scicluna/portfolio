@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import About from "./components/About"
 import Projects from "./components/Projects"
-import Modal from "./components/Modal"
+import Resume from "./components/Resume"
 
 function App() {
   const [page, setPage] = useState('about')
@@ -15,9 +15,9 @@ function App() {
       case 'projects':
         return <Projects />
       case 'contact':
-        return <Modal />
+        return <h1>Contacts</h1>
       case 'resume':
-        return <h1>Resume</h1>
+        return <Resume />
       default:
         return <h1>404</h1>
     }

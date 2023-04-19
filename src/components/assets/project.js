@@ -1,9 +1,3 @@
-const imgs = ["./src/imgs/slimehack.webp", "./src/imgs/eventplanner.webp", "./src/imgs/gifthub.webp"]
-const titles = ["Slimehack", "Eventplanner", "Gifthub"]
-const bodies = [
-
-]
-
 export const projects = [
     {
         title: "Slimehack",
