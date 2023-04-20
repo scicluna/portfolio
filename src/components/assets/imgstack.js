@@ -1,19 +1,19 @@
-export const imgstack = [
-    "./src/imgs/JS.svg.png",
-    "./src/imgs/css2.png",
-    "./src/imgs/HTML.svg.png",
-    "./src/imgs/React.svg.png",
-    "./src/imgs/TS.svg",
-    "./src/imgs/Node.svg.png",
-    "./src/imgs/mongodb.svg",
-    "./src/imgs/mysql-logo.svg",
-    "./src/imgs/jquery.png",
-    "./src/imgs/bootstrap.png",
-    "./src/imgs/git.png",
-    "./src/imgs/express.png",
-    "./src/imgs/chatgpt.webp",
-    "./src/imgs/heroku.webp",
-    "./src/imgs/insomnia.png",
-    "./src/imgs/sequelize.png",
-    "./src/imgs/graphql.webp",
-]
+import js from '../../imgs/js.svg.png'
+import html from '../../imgs/HTML.svg.png'
+import css from '../../imgs/css2.png'
+import react from '../../imgs/React.svg.png'
+import ts from '../../imgs/TS.svg'
+import node from '../../imgs/Node.svg.png'
+import mongodb from '../../imgs/mongodb.svg'
+import mysql from '../../imgs/mysql-logo.svg'
+import jquery from '../../imgs/jquery.png'
+import bootstrap from '../../imgs/bootstrap.png'
+import git from '../../imgs/git.png'
+import express from '../../imgs/express.png'
+import chatgpt from '../../imgs/chatgpt.webp'
+import heroku from '../../imgs/heroku.webp'
+import insomnia from '../../imgs/insomnia.png'
+import sequelize from '../../imgs/sequelize.png'
+import graphql from '../../imgs/graphql.webp'
+
+export const imgstack = [js, html, css, react, ts, node, mongodb, mysql, jquery, bootstrap, git, express, chatgpt, heroku, insomnia, sequelize, graphql]
