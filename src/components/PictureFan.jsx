@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { stack } from "./assets/stack";
 
 
 export default function PictureFan() {
@@ -9,15 +10,7 @@ export default function PictureFan() {
             <button className="text-2xl p-5 absolute z-10 text-indigo-900 bg-white mt-2 rounded-lg shadow-sm shadow-indigo-950 hover:bg-indigo-500 transition-all duration-200 ease-in"
                 onClick={(e) => setHidden(hidden ? false : true)}>My Stack</button>
             <div className={`${hidden ? 'opacity-0' : 'opacity-100'} transition-all ease-out duration-1000`}>
-                <FanImage img={"./src/imgs/JS.svg.png"} position={1} hidden={hidden} />
-                <FanImage img={"./src/imgs/css2.png"} position={2} hidden={hidden} />
-                <FanImage img={"./src/imgs/HTML.svg.png"} position={3} hidden={hidden} />
-                <FanImage img={"./src/imgs/Node.svg.png"} position={4} hidden={hidden} />
-                <FanImage img={"./src/imgs/TS.svg"} position={5} hidden={hidden} />
-                <FanImage img={"./src/imgs/React.svg.png"} position={6} hidden={hidden} />
-                <FanImage img={"./src/imgs/mongodb.svg"} position={7} hidden={hidden} />
-                <FanImage img={"./src/imgs/mysql-logo.svg"} position={8} hidden={hidden} />
-                <FanImage img={"./src/imgs/Tailwind_CSS_Logo.svg.png"} position={9} hidden={hidden} />
+                {stack.map((item, index) => { return <FanImage key={index} img={item} position={index} hidden={hidden} /> })}
             </div>
         </div>
     )
@@ -26,25 +19,42 @@ export default function PictureFan() {
 function FanImage({ img, position, hidden }) {
     function fanPosition() {
         switch (position) {
-            case 1:
+            case 0:
                 return 'sm:-translate-x-40 -translate-x-20 translate-y-0';
-            case 2:
+            case 1:
                 return 'sm:-translate-x-32 -translate-x-12 -translate-y-24 ';
-            case 3:
+            case 2:
                 return 'sm:-translate-x-20 -translate-x-8 -translate-y-12 ';
+            case 3:
+                return '-translate-x-16 translate-y-12 ';
             case 4:
-                return '-translate-x-12 translate-y-20 ';
+                return 'translate-x-8 -translate-y-28';
             case 5:
-                return 'translate-x-12 -translate-y-28';
+                return 'translate-x-8 translate-y-28';
             case 6:
-                return 'translate-x-20 translate-y-24';
-            case 7:
                 return 'sm:translate-x-40 translate-x-28 -translate-y-12';
+            case 7:
+                return 'sm:translate-x-48 translate-x-28 translate-y-12 ';
             case 8:
-                return 'sm:translate-x-44 translate-x-28 translate-y-12 ';
+                return '-translate-x-32 translate-y-28';
             case 9:
-                return '-translate-x-2 translate-y-36';
-
+                return '-translate-x-12 -translate-y-44';
+            case 10:
+                return 'translate-x-12 translate-y-8';
+            case 11:
+                return 'translate-x-40 translate-y-28';
+            case 12:
+                return 'translate-x-44 -translate-y-44';
+            case 13:
+                return '-translate-x-12 translate-y-36';
+            case 14:
+                return 'translate-x-28 -translate-y-36';
+            case 15:
+                return 'translate-x-28 translate-y-6';
+            case 16:
+                return 'translate-x-28 translate-y-36';
+            case 17:
+                return '-translate-x-28 translate-y-36';
             default:
                 return '';
         }
