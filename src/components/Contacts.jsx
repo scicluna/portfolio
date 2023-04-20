@@ -12,7 +12,6 @@ export default function Contacts() {
             </form>
             <div>
                 <p className="mt-2 text-indigo-900">or give me a call at 248-331-6379</p>
-                <p className="mt-2 text-indigo-900">or email me at sciclunajl@gmail.com</p>
             </div>
         </section>
     )

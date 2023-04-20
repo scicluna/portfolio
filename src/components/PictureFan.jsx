@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { stack } from "./assets/stack";
+import { imgstack } from "./assets/imgstack";
 
 
 export default function PictureFan() {
@@ -7,10 +7,10 @@ export default function PictureFan() {
 
     return (
         <div className="w-40 h-28 flex relative">
-            <button className="text-2xl p-5 absolute z-10 text-indigo-900 bg-white mt-2 rounded-lg shadow-sm shadow-indigo-950 hover:bg-indigo-500 transition-all duration-200 ease-in"
+            <button className="text-2xl p-5 absolute z-10 text-indigo-900 bg-white mt-2 rounded-lg shadow-sm shadow-indigo-950 hover:bg-indigo-500 dark:hover:bg-indigo-300 transition-all duration-200 ease-in"
                 onClick={(e) => setHidden(hidden ? false : true)}>My Stack</button>
             <div className={`${hidden ? 'opacity-0' : 'opacity-100'} transition-all ease-out duration-1000`}>
-                {stack.map((item, index) => { return <FanImage key={index} img={item} position={index} hidden={hidden} /> })}
+                {imgstack.map((item, index) => { return <FanImage key={index} img={item} position={index} hidden={hidden} /> })}
             </div>
         </div>
     )

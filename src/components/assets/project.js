@@ -19,6 +19,27 @@ export const projects = [
         img: "./src/imgs/gifthub.webp",
         github: "https://github.com/scicluna/giftlist",
         deploy: "https://gifthub.herokuapp.com/"
+    },
+    {
+        title: "RPG Sheet",
+        body: "My first large project using Typescript and React. I really pushed my knowledge of CSS and JSX here with powerful visual effects and scrolling forms. I also utilized the dnd 5e API to build out powerful generative objects and prefilled level one character sheets.",
+        img: "./src/imgs/rpgsheet.png",
+        github: "https://github.com/scicluna/rpgv2",
+        deploy: "https://scicluna.github.io/rpgv2/"
+    },
+    {
+        title: "TechDeck",
+        body: "Tech Deck was my attempt at creating a basic blog website. It utilizes both frontend and backend heavily leaning on my prior knowledge with Handlebars and Sequelize to organize posts, comments, and user logins. I also played around alot with the CSS and animations using AOS to bring my site to life!",
+        img: "./src/imgs/techdeck.png",
+        github: "https://github.com/scicluna/techblog",
+        deploy: "https://techdecks.herokuapp.com/"
+    },
+    {
+        title: "Movie Mash",
+        body: "Movie Mash was my first ever group project. It was built near the end of the first third of bootcamp after we had learned the basics of front-end development. I learned alot about how to work in a group on a coding project aswell as strugged my way through the git process. It was here where I really became comfortable with calling APIs from the front-end and learned how to lean on and help my teammates.",
+        img: "./src/imgs/moviemash.png",
+        github: "https://github.com/scicluna/movie-mash",
+        deploy: "https://scicluna.github.io/movie-mash/"
     }
 
 ]

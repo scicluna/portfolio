@@ -1,4 +1,4 @@
-export const stack = [
+export const imgstack = [
     "./src/imgs/JS.svg.png",
     "./src/imgs/css2.png",
     "./src/imgs/HTML.svg.png",

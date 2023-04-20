@@ -9,6 +9,7 @@ import Contacts from "./components/Contacts"
 function App() {
   const [page, setPage] = useState('about')
   const [blur, setBlur] = useState(false)
+  const [dark, setDark] = useState(false)
 
   useEffect(() => {
     setBlur(true);
@@ -38,14 +39,18 @@ function App() {
     setPage(page)
   }
 
+  function handleDark() {
+    setDark(dark ? false : true)
+  }
+
   return (
-    <>
+    <main className={`${dark ? "dark" : "light"}`}>
       <Navbar handlePage={handlePage} page={page} />
-      <main className={`bg-indigo-50 pt-10 pb-10 h-screen transition-all ease-out duration-200 ${blur ? "blur-sm" : ""}`}>
+      <section className={`bg-indigo-50 dark:bg-indigo-500 pt-10 pb-10 h-screen transition-all ease-out duration-200 ${blur ? "blur-sm" : ""} `}>
         {pickPage()}
-      </main>
-      <Footer />
-    </>
+      </section>
+      <Footer dark={dark} handleDark={handleDark} />
+    </main>
   )
 }
 

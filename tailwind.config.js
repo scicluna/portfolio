@@ -5,8 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      screens: {
+        // ml stands for 'mobile landscape'
+        ml: {
+          raw: '(min-width: 480px) and (max-width: 960px) and (max-height: 480px)',
+        },
+      },
+    },
+    plugins: [],
+    darkMode: 'class',
+
+  }
 }
+
+
 
