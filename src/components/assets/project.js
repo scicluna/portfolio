@@ -1,3 +1,4 @@
+import socialmedia from '../../imgs/socialmediademo.png'
 import slimehack from '../../imgs/slimehack.webp'
 import eventplanner from '../../imgs/eventplanner.webp'
 import gifthub from '../../imgs/gifthub.webp'
@@ -7,11 +8,18 @@ import moviemash from '../../imgs/moviemash.png'
 
 export const projects = [
     {
+        title: "Social Media Demo",
+        body: "This full stack social media demo is my first large project combining a complex mongo database with a typescript/react frontend. It allowed me to experiment with recursion and fetching within a react context. It was also my first foray into tailwind and really stretched the capabilities of my css skills. Feel free to make an account and post some comments!",
+        img: socialmedia,
+        github: "https://github.com/scicluna/socialfullstack",
+        deploy: "https://social-media-demonstration.herokuapp.com/"
+    },
+    {
         title: "Slimehack",
         body: "This game was built with one thing in mind. How quickly can I pick up a totally new javascript library and use it to create something cool? In just four days I was able to create a simple arcade game using the library along with some free assets from the internet. I hope you enjoy the game as much as I did making it! Use arrowkeys to move and hold spacebar to attack!",
         img: slimehack,
         github: "https://github.com/scicluna/Slimehack",
-        deploy: "https://slimehack.herokuapp.com/"
+        deploy: "https://alarice.itch.io/slimehack"
     },
     {
         title: "Eventplanner",
