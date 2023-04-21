@@ -4,8 +4,8 @@ import me3 from "../imgs/me3.webp"
 export default function About() {
     return (
         <section className="h-full flex flex-col sm:flex-row items-center sm:justify-between sm:m-5 m-1 relative" >
-            <div className=" shadow-sm shadow-indigo-950 bg-white dark:bg-indigo-400 rounded-full h-96 sm:w-4/12 sm:h-4/6 overflow-hidden">
-                <img src={me3} alt="A picture of myself!" className="h-full w-full m-5" />
+            <div className="shadow-sm shadow-indigo-950 bg-white dark:bg-indigo-400 rounded-full h-96 sm:w-4/12 sm:h-4/6 overflow-hidden">
+                <img src={me3} alt="A picture of myself!" className="h-full w-full aspect-square" />
             </div>
             <div className="lg:absolute lg:mt-0 mt-10 lg:top-auto lg:left-1/2 lg:-translate-x-1/2 lg:h-auto lg:w-auto top-40">
                 <PictureFan />

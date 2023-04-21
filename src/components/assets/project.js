@@ -5,7 +5,6 @@ import rpgsheet from '../../imgs/rpgsheet.png'
 import techdeck from '../../imgs/techdeck.png'
 import moviemash from '../../imgs/moviemash.png'
 
-
 export const projects = [
     {
         title: "Slimehack",

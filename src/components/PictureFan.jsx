@@ -60,6 +60,6 @@ function FanImage({ img, position, hidden }) {
         }
     }
 
-    return <img src={img} className={`w-28 opacity-70 sm:opacity-90 h-28 aspect-square absolute top-0 transform
+    return <img src={img} className={`w-28 opacity-70 sm:opacity-90 h-28 md:h-40 aspect-square absolute top-0 transform
     transition-all ease-out duration-1000 ${hidden ? '' : fanPosition()}`} />
 }
