@@ -1,45 +1,33 @@
-GIVEN a single-page application portfolio for a web developer - DONE
-WHEN I load the portfolio - DONE
-THEN I am presented with a page containing a header, a section for content, and a footer - DONE
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  
+  # Professional Portfolio
 
-WHEN I view the header - DONE
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio - DONE
+  ## Description
 
-WHEN I view the navigation titles - DONE
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted - DONE
+  A react project where I learned more about how to "think" in React and how to formulate a series of react components in a complex way. I believe that all of the effects on the page are quite nice, but if you have any opinions on how to improve it, please shoot me an email!
 
-WHEN I click on a navigation title - DONE
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted - DONE
+  ## Table of Contents
 
-WHEN I load the portfolio the first time - DONE
-THEN the About Me title and section are selected by default - DONE
- 
-WHEN I am presented with the About Me section - DONE 
-THEN I see a recent photo or avatar of the developer and a short bio about them - DONE
- 
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six(three for now) of the developer’s applications with links to both the deployed applications and the - DONE
-corresponding GitHub repository - DONE
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Questions](#questions)
 
-WHEN I am presented with the Contact section  - DONE
-THEN I see a contact form with fields for a name, an email address, and a message - DONE
+  ## Installation
 
-WHEN I move my cursor out of one of the form fields without entering text - it does on submit
-THEN I receive a notification that this field is required - it does on submit
+  npm i - npm run dev
 
-WHEN I enter text into the email address field - it does on submit
-THEN I receive a notification if I have entered an invalid email address - it does on submit
+  ## Usage
 
-WHEN I am presented with the Resume section - DONE
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies - DONE
+  Just run the app at https://scicluna.github.io/portfolio/
+  ![A picture of my portfolio!](/src/imgs/portfolio.png)
 
-WHEN I view the footer - DONE
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) - DONE
+  ## License
 
-ADD MORE PROJECTS TO CAROUSEL?
-ANIMATION IN BACKGROUND LIKE BEFORE?
-PAUSE FOR ANIMATION
+  This application is covered under the MIT license. Read more at [License: MIT](https://opensource.org/licenses/MIT)
 
-OPTIMIZE? (HOW?)
-SMALL TOUCHES
-DEPLOY
+  ## Questions
+
+  1. Where can I find your github so that I can view your other projects? https://github.com/scicluna
+
+  2. What email address should I use to contact you regarding further opportunities or questions? sciclunajl@gmail.com
