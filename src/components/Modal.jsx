@@ -11,9 +11,11 @@ export default function Modal({ image, deploy, github, title, body, modal, index
             <img src={image} className="h-1/2 object-center"></img>
             <h5 className="pl-2 pt-2 sm:text-3xl">{title}</h5>
             <p className="p-2 text-xs sm:text-lg mb-7 overflow-y-scroll h-full">{body}</p>
-            <div className="absolute flex w-full justify-between bottom-0 p-2 text-indigo-400">
-                <a href={deploy} target="_blank" className="hover:text-indigo-800"><small>App</small></a>
-                <a href={github} target="_blank" className="hover:text-indigo-800"><small>Github</small></a>
+            <div className="flex justify-center">
+                <div className="absolute flex w-96 justify-between bottom-0 p-2 text-indigo-400">
+                    <a href={deploy} target="_blank" className="text-indigo-600 hover:text-indigo-900">App</a>
+                    <a href={github} target="_blank" className="text-indigo-600 hover:text-indigo-900">Github</a>
+                </div>
             </div>
         </div>
     )
