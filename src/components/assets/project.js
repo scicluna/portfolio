@@ -9,42 +9,42 @@ import moviemash from '../../imgs/moviemash.png'
 export const projects = [
     {
         title: "Social Media Demo",
-        body: "This full stack social media demo is my first large project combining a complex mongo database with a typescript/react frontend. It allowed me to experiment with recursion and fetching within a react context. It was also my first foray into tailwind and really stretched the capabilities of my css skills. Feel free to make an account and post some comments!",
+        body: "This full-stack social media demo represents my first significant project that combines a sophisticated MongoDB database with a TypeScript/React frontend. The development process provided an opportunity for me to explore recursion and fetching within a React context. Additionally, this project marked my initial experience with Tailwind CSS, pushing the boundaries of my CSS expertise. Feel free to create an account and share your thoughts by posting comments!",
         img: socialmedia,
         github: "https://github.com/scicluna/socialfullstack",
         deploy: "https://social-media-demonstration.herokuapp.com/"
     },
     {
         title: "Slimehack",
-        body: "This game was built with one thing in mind. How quickly can I pick up a totally new javascript library and use it to create something cool? In just four days I was able to create a simple arcade game using the library along with some free assets from the internet. I hope you enjoy the game as much as I did making it! Use arrowkeys to move and hold spacebar to attack!",
+        body: "This game was developed with a singular goal: to gauge how swiftly I could master an entirely new JavaScript library and utilize it to create something captivating. Within just four days, I successfully developed a simple arcade game using the library, complemented by free assets found online. I hope you enjoy playing the game as much as I enjoyed creating it! Use the arrow keys for movement and hold the spacebar to attack.",
         img: slimehack,
         github: "https://github.com/scicluna/Slimehack",
         deploy: "https://alarice.itch.io/slimehack"
     },
     {
         title: "Eventplanner",
-        body: "My first react project. I designed this app to be a replacement for a weekly planner app that I had created back during my first months of bootcamp. This event planner shows off my skills in animation and my ability to quickly pick up new technologies. I avoided making this a full stack application this time in favour of saving the state of events in local storage.",
+        body: "I developed this event planner to fulfill the practical need of organizing my events. As my first React project, this app serves as a replacement for a weekly planner app I had created during the early months of my bootcamp experience. The event planner demonstrates my skills in animation and my ability to rapidly learn new technologies. Instead of building a full-stack application, I chose to store the state of events in local storage for a more streamlined approach.",
         img: eventplanner,
         github: "https://github.com/scicluna/eventplanner",
         deploy: "https://scicluna.github.io/eventplanner/"
     },
     {
         title: "Gifthub",
-        body: "Gifthub was my second ever group project. We really had to band together and make a full-stack application using everything we had learned until that point in bootcamp. It was here where I really feel that I got a hang of express and was able to master Handlebars. This project really allowed me to appreciate SQL and Sequelize and what they can do for an application since they allowed us to make complex interactions between database items trivially easy to see and utilize. It's possible that by the time you read this the API is offline - just shoot me an email if you would like to sample it and I'll buy another month of the service.",
+        body: "Gifthub marked my second group project, where our team collaborated to develop a full-stack application, utilizing everything we had learned up to that point in our bootcamp. This project helped me gain a solid grasp of Express and master Handlebars. It also allowed me to fully appreciate the capabilities of SQL and Sequelize, as they enabled us to create intricate interactions between database items with ease. Please note that the API may be offline by the time you read this – feel free to email me if you'd like to try it out, and I'll renew the service for another month.",
         img: gifthub,
         github: "https://github.com/scicluna/giftlist",
         deploy: "https://gifthub.herokuapp.com/"
     },
     {
         title: "RPG Sheet",
-        body: "My first large project using Typescript and React. I really pushed my knowledge of CSS and JSX here with powerful visual effects and scrolling forms. I also utilized the dnd 5e API to build out powerful generative objects and prefilled level one character sheets.",
+        body: "RPG Sheet marked my initial venture into the world of TypeScript and React. This project showcases my proficiency in Tailwind CSS and my capability to design intricate forms that serve practical purposes. Initially, I developed RPG Sheet to streamline the creation of core D&D 5e characters for my personal use and to maintain an editable, browser-based HTML character sheet.",
         img: rpgsheet,
         github: "https://github.com/scicluna/rpgv2",
         deploy: "https://scicluna.github.io/rpgv2/"
     },
     {
         title: "Movie Mash",
-        body: "Movie Mash was my first ever group project. It was built near the end of the first third of bootcamp after we had learned the basics of front-end development. I learned alot about how to work in a group on a coding project aswell as strugged my way through the git process. It was here where I really became comfortable with calling APIs from the front-end and learned how to lean on and help my teammates.",
+        body: "Movie Mash represents my first-ever group project, developed towards the end of the initial third of my bootcamp, after gaining a solid foundation in front-end development. This experience taught me valuable lessons about teamwork in coding projects and guided me through the challenges of the Git process. It was during this project that I became adept at making API calls from the front-end and learned the importance of both relying on and supporting my teammates.",
         img: moviemash,
         github: "https://github.com/scicluna/movie-mash",
         deploy: "https://scicluna.github.io/movie-mash/"
