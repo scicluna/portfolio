@@ -3,7 +3,6 @@ import slimehack from '../../imgs/slimehack.webp'
 import eventplanner from '../../imgs/eventplanner.webp'
 import gifthub from '../../imgs/gifthub.webp'
 import rpgsheet from '../../imgs/rpgsheet.png'
-import techdeck from '../../imgs/techdeck.png'
 import moviemash from '../../imgs/moviemash.png'
 
 export const projects = [
