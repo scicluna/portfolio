@@ -2,6 +2,7 @@ export default function Contacts() {
     return (
         <section className="flex flex-col items-center justify-center h-full" >
             <form className="flex flex-col w-2/6 max-w-full" action="https://formsubmit.co/sciclunajl@gmail.com" method='POST' >
+                <input type="hidden" name="_next" value="https://scicluna.github.io/portfolio/" />
                 <label htmlFor="name" className="text-indigo-900">Name</label>
                 <input name="name" type="text" id="name" required placeholder="Name..." className="p-1 shadow-sm shadow-indigo-950 righteous" />
                 <label htmlFor="email" className="text-indigo-900">Email</label>
