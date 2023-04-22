@@ -43,13 +43,6 @@ export const projects = [
         deploy: "https://scicluna.github.io/rpgv2/"
     },
     {
-        title: "TechDeck",
-        body: "Tech Deck was my attempt at creating a basic blog website. It utilizes both frontend and backend heavily leaning on my prior knowledge with Handlebars and Sequelize to organize posts, comments, and user logins. I also played around alot with the CSS and animations using AOS to bring my site to life!",
-        img: techdeck,
-        github: "https://github.com/scicluna/techblog",
-        deploy: "https://techdecks.herokuapp.com/"
-    },
-    {
         title: "Movie Mash",
         body: "Movie Mash was my first ever group project. It was built near the end of the first third of bootcamp after we had learned the basics of front-end development. I learned alot about how to work in a group on a coding project aswell as strugged my way through the git process. It was here where I really became comfortable with calling APIs from the front-end and learned how to lean on and help my teammates.",
         img: moviemash,
