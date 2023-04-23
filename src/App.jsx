@@ -46,7 +46,7 @@ function App() {
   return (
     <main className={`${dark ? "dark" : "light"}`}>
       <Navbar handlePage={handlePage} page={page} />
-      <section className={`bg-indigo-50 dark:bg-indigo-500 pt-10 pb-10 h-screen transition-all ease-out duration-200 ${blur ? "blur-sm" : ""} `}>
+      <section className={`bg-indigo-50 dark:bg-indigo-500 pt-10 pb-10 w-screen h-screen transition-all ease-out duration-200 ${blur ? "blur-sm" : ""} `}>
         {pickPage()}
       </section>
       <Footer dark={dark} handleDark={handleDark} />
