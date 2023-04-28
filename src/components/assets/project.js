@@ -4,8 +4,16 @@ import eventplanner from '../../imgs/eventplanner.webp'
 import gifthub from '../../imgs/gifthub.webp'
 import rpgsheet from '../../imgs/rpgsheet.png'
 import moviemash from '../../imgs/moviemash.png'
+import voidchat from '../../imgs/voidchat.png'
 
 export const projects = [
+    {
+        title: "Void Chat",
+        body: "Void Chat is a custom-built chat application that facilitates real-time communication between users, utilizing Google and GitHub authentication for seamless and secure access. This project marked my initial experience with OAuth authentication, web sockets, and the intricacies of client-server interactions during deployment. By employing TypeScript for the backend and a React/TypeScript combination for the frontend, I successfully created a cohesive and interactive chat room as a demonstrative showcase.",
+        img: voidchat,
+        github: "https://github.com/scicluna/chatroomdemo",
+        deploy: "https://voidchat.herokuapp.com/"
+    },
     {
         title: "Social Media Demo",
         body: "This full-stack social media demo represents my first significant project that combines a sophisticated MongoDB database with a TypeScript/React frontend. The development process provided an opportunity for me to explore recursion and fetching within a React context. Additionally, this project marked my initial experience with Tailwind CSS, pushing the boundaries of my CSS expertise. Feel free to create an account and share your thoughts by posting comments!",
