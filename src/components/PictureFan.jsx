@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { imgstack } from "./assets/imgstack";
+import { imgstack } from "../assets/imgstack";
 
 
 export default function PictureFan() {
