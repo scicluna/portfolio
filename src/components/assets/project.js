@@ -4,7 +4,7 @@ import eventplanner from '../../imgs/eventplanner.webp'
 import gifthub from '../../imgs/gifthub.webp'
 import rpgsheet from '../../imgs/rpgsheet.png'
 import moviemash from '../../imgs/moviemash.png'
-import voidchat from '../../imgs/voidchat.png'
+import voidchat from '../../imgs/voidchat2.png'
 
 export const projects = [
     {
