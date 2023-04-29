@@ -1,4 +1,4 @@
-import PictureFan from "./PictureFan"
+import PictureFan from "../components/PictureFan"
 import me3 from "../imgs/me3.webp"
 
 export default function About() {

@@ -4,7 +4,7 @@ import Footer from "./components/Footer"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
-import Contacts from "./components/Contacts"
+import Contacts from "./pages/Contacts"
 
 function App() {
   const [page, setPage] = useState('about')
