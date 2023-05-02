@@ -1,4 +1,4 @@
-import resume from '../imgs/jlsresume.pdf'
+import resume from '../imgs/jlsprofessionalresume.pdf'
 
 export default function Resume() {
     return (
