@@ -5,8 +5,16 @@ import gifthub from '../imgs/gifthub.webp'
 import rpgsheet from '../imgs/rpgsheet.png'
 import moviemash from '../imgs/moviemash.png'
 import voidchat from '../imgs/voidchat2.png'
+import trailblazer from '../imgs/trailblazer.webp'
 
 export const projects = [
+    {
+        title: "Trailblazer",
+        body: "Our culminating project for the Michigan State University Full-stack Bootcamp, presented via EdX, integrates our passion for nature with sophisticated web technologies, such as React, GraphQL, JWTs, MongoDB, and the National Park Service API. Our objective was to create an intuitive and robust application tailored to the requirements of national park aficionados and trip organizers. This capstone project symbolizes the significant strides we've made in the realm of web development. We trust that this application will enhance your appreciation of the diverse natural wonders our nation has to offer.",
+        img: trailblazer,
+        github: "https://github.com/scicluna/trailblazer",
+        deploy: "https://nps-trailblazer.herokuapp.com/"
+    },
     {
         title: "Void Chat",
         body: "Void Chat is a custom-built chat application that facilitates real-time communication between users, utilizing Google and GitHub authentication for seamless and secure access. This project marked my initial experience with OAuth authentication, web sockets, and the intricacies of client-server interactions during deployment. By employing TypeScript for the backend and a React/TypeScript combination for the frontend, I successfully created a cohesive and interactive chat room as a demonstrative showcase.",
