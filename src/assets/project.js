@@ -6,8 +6,16 @@ import rpgsheet from '../imgs/rpgsheet.png'
 import moviemash from '../imgs/moviemash.png'
 import voidchat from '../imgs/voidchat2.png'
 import trailblazer from '../imgs/trailblazer.webp'
+import proxichat from '../imgs/proxichat5.webp'
 
 export const projects = [
+    {
+        title: "Proxichat",
+        body: "Proxichat is a real-time, serverless chat application that uses geolocation technology to create dynamic chatrooms. This application scales according to user's preferred geographic ranges, bringing a unique and localized chatting experience to its users. Real-time communication: Messages are relayed in real-time, ensuring seamless and instantaneous communication. Geo-contextual chatrooms: Proxichat uses geolocation to create dynamic chatrooms. The range of these chatrooms scales according to the user's preferred geographic ranges. Serverless Architecture: Proxichat is built on a serverless architecture that ensures high availability, automatic scaling, and cost-effective deployment and operation.",
+        img: proxichat,
+        github: "https://github.com/scicluna/proxichat",
+        deploy: "https://proxichat.vercel.app"
+    },
     {
         title: "Trailblazer",
         body: "Our culminating project for the Michigan State University Full-stack Bootcamp, presented via EdX, integrates our passion for nature with sophisticated web technologies, such as React, GraphQL, JWTs, MongoDB, and the National Park Service API. Our objective was to create an intuitive and robust application tailored to the requirements of national park aficionados and trip organizers. This capstone project symbolizes the significant strides we've made in the realm of web development. We trust that this application will enhance your appreciation of the diverse natural wonders our nation has to offer.",
