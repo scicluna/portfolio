@@ -1,5 +1,4 @@
 import socialmedia from '../imgs/socialmediademo.png'
-import slimehack from '../imgs/slimehack.webp'
 import eventplanner from '../imgs/eventplanner.webp'
 import gifthub from '../imgs/gifthub.webp'
 import rpgsheet from '../imgs/rpgsheet.png'
@@ -36,13 +35,6 @@ export const projects = [
         img: socialmedia,
         github: "https://github.com/scicluna/socialfullstack",
         deploy: "https://social-media-demonstration.herokuapp.com/"
-    },
-    {
-        title: "Slimehack",
-        body: "This game was developed with a singular goal: to gauge how swiftly I could master an entirely new JavaScript library and utilize it to create something captivating. Within just four days, I successfully developed a simple arcade game using the library, complemented by free assets found online. I hope you enjoy playing the game as much as I enjoyed creating it! Use the arrow keys for movement and hold the spacebar to attack.",
-        img: slimehack,
-        github: "https://github.com/scicluna/Slimehack",
-        deploy: "https://alarice.itch.io/slimehack"
     },
     {
         title: "Eventplanner",

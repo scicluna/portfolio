@@ -10,7 +10,7 @@ export default function Modal({ image, deploy, github, title, body, modal, index
                 size="2x" onClick={e => setModal([false, false, false])} />
             <img src={image} className="h-1/2 object-center"></img>
             <h5 className="pl-2 pt-2 sm:text-3xl">{title}</h5>
-            <p className="p-2 text-xs sm:text-lg mb-7 overflow-y-auto h-full">{body}</p>
+            <p className="p-2 text-xs sm:text-sm mb-7 overflow-y-auto h-full">{body}</p>
             <div className="flex justify-center">
                 <div className="absolute flex w-96 justify-between bottom-0 p-2 text-indigo-400">
                     <a href={deploy} target="_blank" className="text-indigo-600 hover:text-indigo-900">App</a>
